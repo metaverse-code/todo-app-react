@@ -45,8 +45,9 @@ The user interface is designed to be responsive, ensuring a seamless experience 
 Technologies Used
 React
 CSS (for styling)
+
 Feedback
-If you have any feedback or suggestions for improving this application, please feel free to create an issue or reach out to us at krajnish114@gmail.com
+If you have any feedback or suggestions for improving this application, please feel free to create an issue or reach out to us at krajnish114@gmail.com 
 
 Author
 Rajnish Kumar Niraj
