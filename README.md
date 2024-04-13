@@ -49,7 +49,7 @@ Feedback
 If you have any feedback or suggestions for improving this application, please feel free to create an issue or reach out to us at krajnish114@gmail.com
 
 Demo:
-![image](https://github.com/metaverse-code/todo-app-react/assets/133573539/dc3e59d3-cb76-45ec-952a-4c3d18358e47)
+![image](https://github.com/metaverse-code/todo-app-react/assets/133573539/84df58a3-1000-43a1-b5ea-32ee1f340a0e)
 
 
 
