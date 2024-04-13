@@ -1,42 +1,92 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+    background-color: #17181f;
+    color: #ddd;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    max-width: 300px;
+    margin: 20px auto;
+}
+form{
+    border: 3px solid #30313D;
+    padding: 5px;
+    display:flex;
+}
+form input[type="text"] {
+    background: none;
+    color:#fff;
+    border:0;
+    padding: 0 8px;
+    display:block;
+    width: 100%;
+    outline: none;
+}
+form button{
+    background-color: #ff0760;
+    border:0;
+    border-radius: 6px;
+    cursor:pointer;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+div.task{
+    background-color: #30313D;
+    padding: 9px;
+    margin-top: 5px;
+    display:flex;
+    align-items: center;
+    transition: opacity .3s linear;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+div.task svg{
+    height: 20px;
+    margin-right: 6px;
+    fill: #ff0760;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+div.task.done{
+    opacity: 0.3;
+}
+div.task-name, div.task form{
+    flex-grow:1;
+}
+div.task span{
+    position:relative;
+}
+div.task span:before{
+    content:'';
+    display:block;
+    width:0;
+    height:1px;
+    background-color: #ddd;
+    position:absolute;
+    top: 10px;
+    transition: width .1s linear;
+}
+div.task.done span:before{
+    width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1, h2{
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+div.checkbox{
+    display:flex;
+    align-items: center;
 }
 
-.card {
-  padding: 2em;
+button.trash{
+    background:none;
+    border:none;
+    display:flex;
+    cursor:pointer;
 }
-
-.read-the-docs {
-  color: #888;
+button.trash svg{
+    fill: #888;
+    height: 14px;
+}
+div.task input{
+    border: 2px solid #555;
+    border-radius:5px;
+    padding: 2px 4px;
 }
